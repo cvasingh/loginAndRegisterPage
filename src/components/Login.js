@@ -9,7 +9,6 @@ export default function Login() {
     const [password, setPassword] = useState("");
 
     const handleLogIn = () => {
-        notification(email + ' ' + password, 'danger');
         alert(email + ' ' + password);
     };
     return <div className='row justify-content-center'>

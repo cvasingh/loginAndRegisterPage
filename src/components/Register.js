@@ -11,8 +11,6 @@ export default function Register() {
     const [password1, setPassword1] = useState("");
 
     const handleRegister = () => {
-        notification(firstname + ' ' + lastname + ' ' + email + ' '
-            + phone + ' ' + password + ' ' + password1, 'danger');
         alert(firstname + ' ' + lastname + ' ' + email + ' '
             + phone + ' ' + password + ' ' + password1)
     };
