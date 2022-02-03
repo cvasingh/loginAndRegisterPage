@@ -12,22 +12,8 @@ export default function Login() {
         notification(email + ' ' + password, 'danger');
         alert(email + ' ' + password);
     };
-
-    var liveNotification = document.getElementById('liveNotification');
-    function notification(message, type) {
-        var wrapper = document.createElement('div')
-        wrapper.innerHTML = '<div class="alert alert-' + type
-            + ' alert-dismissible" role="alert">' + message +
-            '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
-
-        liveNotification.append(wrapper)
-    }
-
     return <div className='row justify-content-center'>
         <div className='col-md-8 col-sm-10'>
-            {/* notification*/}
-            <div id="liveNotification"></div>
-
             <div className='m-3 fw-bolder display-4 text-ska-primary-dark'>
                 Log In
             </div>
@@ -44,7 +30,8 @@ export default function Login() {
                         onChange={(event) => setEmail(event.target.value)} required />
                 </div>
                 <div class="mb-3">
-                    <input type="password" class="form-control border-2 rounded-pill form-control-lg border-ska-primary-dark" placeholder="Password"
+                    <input type="password" class="form-control border-2 rounded-pill form-control-lg border-ska-primary-dark" 
+                    placeholder="Password"
                         value={password} onChange={(event) => setPassword(event.target.value)} required />
                 </div>
                 <div className='row mb-3'>

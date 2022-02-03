@@ -1,3 +1,17 @@
+/* style */
+.glass{
+    background : linear-gradient(315deg,rgba(224, 224, 224,.4),rgba(255, 255, 255,.6));
+    box-shadow : 0 0 24px -1px rgb(53 101 224 / 25%);
+    width: 70%;
+    min-height: 70%;
+    overflow: hidden;
+    backdrop-filter: blur(120px);
+    margin: 80px auto;
+    border-radius: 35px;
+}
+
+
+/* over write on bootstrap */
 a {
     color: #198754;
 }
@@ -13,8 +27,6 @@ a:hover{
     background: linear-gradient(125deg, #01522ce1,#20975fe1);
     color: #fff;
 }
-
-
 .form-check-input:checked{
     background-color: #198754;
     border-color:#115736;

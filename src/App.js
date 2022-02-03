@@ -16,8 +16,6 @@ function Copyright() {
     </p>
   );
 }
-
-
 export default function App() {
 
   return (
@@ -33,16 +31,7 @@ export default function App() {
             borderTopRightRadius: '8%',
             borderBottomRightRadius: '8%',
           }}>
-          <div className='py-4' style={{
-            background: 'linear-gradient(315deg,rgba(224, 224, 224,.4),rgba(255, 255, 255,.6))',
-            boxShadow: '0 0 24px -1px rgb(53 101 224 / 25%)',
-            width: '70%',
-            minHeight: '70%',
-            overflow: 'hidden',
-            backdropFilter: 'blur(120px)',
-            margin: '80px auto',
-            borderRadius: '35px',
-          }}>
+          <div className='py-4 glass'>
             <div className='row align-items-center'>
               <div className='col-5 ps-5'>
                 <img src={logoimage} className='img-fluid' alt='logo'
@@ -53,7 +42,6 @@ export default function App() {
                   Skillark</div>
               </div>
             </div>
-
             <div className='h2 text-start ms-5 mt-4 fw-bold'>Hey There, Welcome!</div>
             <div className='h6 text-start ms-5 my-3 text-success'>We are Skillark Technology</div>
             <div className='h4 fw-bolder mt-5 text-center m-3'>
@@ -76,9 +64,9 @@ export default function App() {
             </div>
           </div>
 
-          {/* <Login /> */}
+          <Login />
           
-          <Register/>
+          {/* <Register/> */}
 
           <Copyright />
         </div>

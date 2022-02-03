@@ -24,22 +24,8 @@ export default function Register() {
     const handleOnChange = () => {
         agreeBtn ? (setAgreeBtn(false)) : (setAgreeBtn(true));
     }
-    // liveNotification
-    var liveNotification = document.getElementById('liveNotification');
-    function notification(message, type) {
-        var wrapper = document.createElement('div')
-        wrapper.innerHTML = '<div class="alert alert-' + type
-            + ' alert-dismissible" role="alert">' + message +
-            '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
-
-        liveNotification.append(wrapper)
-    }
     return <div className='row justify-content-center'>
         <div className='col-md-8 col-sm-10'>
-
-            {/* notification*/}
-            <div id="liveNotification"></div>
-
             <div className='m-3 fw-bolder display-4 text-ska-primary-dark'>
                 Register
             </div>
