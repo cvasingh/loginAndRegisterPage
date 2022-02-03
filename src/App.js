@@ -1,7 +1,7 @@
 import * as React from 'react';
 import bgimage from './components/img/bg.png';
 import logoimage from './components/img/logo.png';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import './App.css';
 import Login from './components/Login';

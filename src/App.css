@@ -4,15 +4,18 @@ a {
 a:hover{
     color: #115736;
 }
-.btn-success{
-    background: linear-gradient(125deg, #068047e1,#13804de1, #4ab382de);
+.btn-ska-primary-dark{
+    background: linear-gradient(125deg, #068047e1,#058f4ee1, #4ab382de);
     color: #fff;
 }
-.btn-outline-success:hover{
-    background: linear-gradient(125deg, #166d44e1, #4ab382de);
+.btn-ska-primary-dark:hover,
+.btn-outline-ska-primary-dark:hover{
+    background: linear-gradient(125deg, #01522ce1,#20975fe1);
     color: #fff;
 }
+
+
 .form-check-input:checked{
     background-color: #198754;
     border-color:#115736;
-}
+} 

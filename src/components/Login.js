@@ -28,25 +28,23 @@ export default function Login() {
             {/* notification*/}
             <div id="liveNotification"></div>
 
-            <div className='m-3 fw-bolder display-4'
-                style={{ color: `${primary}`, fontFamily: 'Poppins, sans-serif' }}>
+            <div className='m-3 fw-bolder display-4 text-ska-primary-dark'>
                 Log In
             </div>
             <div className='d-grid gap-2 col-10  mx-auto'>
-                <button type="button" class="btn btn-outline-success border-3">
+                <button type="button" class="btn btn-outline-ska-primary-dark border-2 rounded-pill">
                     <i className=''></i>
                     Continue with Google</button>
-                <div className='text-center h6' style={{ color: `${primary}` }}>OR</div>
+                <div className='text-center h6 text-ska-primary-dark'>OR</div>
             </div>
             <form onSubmit={handleLogIn} action=''>
                 <div class="mb-3">
                     <input type="email" placeholder="Email address" value={email} autoFocus
-                        class="form-control form-control-lg border-success border-2 rounded-pill"
-                        onChange={(event) => setEmail(event.target.value)}
-                        required />
+                        class="form-control form-control-lg border-ska-primary-dark border-2 rounded-pill"
+                        onChange={(event) => setEmail(event.target.value)} required />
                 </div>
                 <div class="mb-3">
-                    <input type="password" class="form-control border-2 rounded-pill form-control-lg border-success" placeholder="Password"
+                    <input type="password" class="form-control border-2 rounded-pill form-control-lg border-ska-primary-dark" placeholder="Password"
                         value={password} onChange={(event) => setPassword(event.target.value)} required />
                 </div>
                 <div className='row mb-3'>
@@ -59,7 +57,7 @@ export default function Login() {
                     </div>
                 </div>
                 <div class="d-grid gap-2 col-10 m-2 mx-auto ">
-                    <button type="submit" class="btn btn-success"
+                    <button type="submit" class="btn btn-ska-primary-dark rounded-pill"
                     >Log In</button>
                 </div>
             </form>
