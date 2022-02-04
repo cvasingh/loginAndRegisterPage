@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Route, Routes } from 'react-router-dom';
 // file
 import bgimage from './img/bg.png';
 import logoimage from './img/logo.png';
@@ -45,7 +46,7 @@ export default function Loginmodule() {
             <div className='row align-items-center'>
               <div className='col-5 text-end'>
                 <img src={logoimage} className='img-fluid'
-                  style={{ height: '100px'}}></img>
+                  style={{ height: '100px' }}></img>
               </div>
               <div className='col-7'>
                 <div className='display-3 text-start fw-bold' style={{ color: '#444' }}>
@@ -53,11 +54,10 @@ export default function Loginmodule() {
               </div>
             </div>
           </div>
-
-          {/* <Login /> */}
-          
-          <Register/>
-
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+          </Routes>
           <Copyright />
         </div>
       </div>

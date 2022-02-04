@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
+
 
 export default function Register() {
     const primary = '#207d5c';
@@ -82,7 +84,7 @@ export default function Register() {
                 </div>
             </form>
             <div className='text-center h6 m-2'>
-                Already have a account? <a href=''>Log In</a>
+                Already have a account? <Link to='/login'>Log In</Link>
             </div>
         </div>
     </div>

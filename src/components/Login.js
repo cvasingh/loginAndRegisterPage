@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 
 
 
@@ -48,7 +49,7 @@ export default function Login() {
                 </div>
             </form>
             <div className='text-center h6 m-2'>
-                Don't have a account? <a href='#'>Register</a>
+                Don't have a account? <Link to='/register'>Register</Link>
             </div>
         </div>
     </div>
