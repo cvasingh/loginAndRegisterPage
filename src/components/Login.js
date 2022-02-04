@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -30,8 +30,8 @@ export default function Login() {
                         onChange={(event) => setEmail(event.target.value)} required />
                 </div>
                 <div class="mb-3">
-                    <input type="password" class="form-control border-2 rounded-pill form-control-lg border-ska-primary-dark" 
-                    placeholder="Password"
+                    <input type="password" class="form-control border-2 rounded-pill form-control-lg border-ska-primary-dark"
+                        placeholder="Password"
                         value={password} onChange={(event) => setPassword(event.target.value)} required />
                 </div>
                 <div className='row mb-3'>
@@ -40,7 +40,7 @@ export default function Login() {
                         <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                     </div>
                     <div className='col-md text-end'>
-                        <a href='#'>Forgot Password?</a>
+                        <Link to='/login'>Forgot Password?</Link>
                     </div>
                 </div>
                 <div class="d-grid gap-2 col-10 m-2 mx-auto ">

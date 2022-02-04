@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Switch, Routes, Route } from 'react-router-dom';
 // file
 import bgimage from './img/bg.png';
 import logoimage from './img/logo.png';
@@ -8,7 +8,7 @@ import Copyright from './Copyright';
 import Login from './Login';
 import Register from './Register';
 
-export default function Loginmodule() {
+export default function Loginmodule(props) {
   return (
     <div className='container-fluid' style={{ backgroundColor: '#e8fff7', minHeight: '100vh', }}>
       <div className='row align-items-center'>
@@ -54,10 +54,9 @@ export default function Loginmodule() {
               </div>
             </div>
           </div>
-          <Routes>
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-          </Routes>
+
+          {(props.id=='#login')?<Login/>:<Register/>}
+          
           <Copyright />
         </div>
       </div>
