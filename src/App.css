@@ -9,8 +9,9 @@
     margin: 80px auto;
     border-radius: 35px;
 }
-
-
+.check{
+color:rgba(138, 158, 147, 0.205)
+}
 /* over write on bootstrap */
 a {
     color: #198754;

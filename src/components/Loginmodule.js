@@ -55,8 +55,8 @@ export default function Loginmodule(props) {
             </div>
           </div>
 
-          {(props.id=='#login')?<Login/>:<Register/>}
-          
+          {(props.id == '#login') ? <Login /> : <Register />}
+
           <Copyright />
         </div>
       </div>
