@@ -9,9 +9,38 @@
     margin: 80px auto;
     border-radius: 35px;
 }
-.check{
-color:rgba(138, 158, 147, 0.205)
+
+.social_media a{
+    transition: .3s;
 }
+
+.social_media a.fb{ color:#fff; background:#1964DA; border-radius: 7px;}
+.social_media a.twtr{color: #fff; background:#3ABDD1; border-radius:7px;}
+.social_media a.github{ color:#FFFFFF; background:#9CDAF1; border-radius: 7px;}
+.social_media a.gogl{color: #fff; background:#ff3e30; border-radius:7px;}
+.social_media a.rss{color: #fff; background:#F15200; border-radius:7px;}
+.social_media a.insta{ 
+    color:#fff;
+     background:linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+     border-radius: 7px;}
+.social_media a.linkedin{color: #fff; background: #0077b5; border-radius:7px;}
+.social_media a.skype{color: #fff; background:#00AAF1; border-radius:7px;}
+.social_media a.yt{ color:#fff; background:#f00; border-radius: 7px;}
+.social_media a.dribbble{ color: #fff; background:#F97193; border-radius:7px;}
+
+.social_media a.fb:hover{ color:#1964DA; background:#fff; border-radius: 7px;}
+.social_media a.twtr:hover{ color: #3ABDD1; background:#fff; border-radius:7px;}
+.social_media a.github:hover{ color:#9CDAF1; background:#FFFFFF; border-radius: 7px;}
+.social_media a.gogl:hover{color: #ff3e30; background:#fff; border-radius:7px;}
+.social_media a.rss:hover{color: #F15200; background:#fff; border-radius:7px;}
+.social_media a.insta:hover{ 
+    color:#bc1888; 
+    background:#fff;
+    border-radius: 7px;}
+.social_media a.linkedin:hover{color: #0077b5; background: #fff; border-radius:7px;}
+.social_media a.skype:hover{color: #00AAF1; background:#fff; border-radius:7px;}
+.social_media a.yt:hover{ color:#f00; background:#fff; border-radius: 7px;}
+.social_media a.dribbble:hover{ color: #F97193; background:#fff; border-radius:7px;}
 /* over write on bootstrap */
 a {
     color: #198754;
