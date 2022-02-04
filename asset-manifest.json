@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/loginAndRegisterPage/static/css/main.9d2daae3.css",
-    "main.js": "/loginAndRegisterPage/static/js/main.fd25ced0.js",
+    "main.css": "/loginAndRegisterPage/static/css/main.8eeba69b.css",
+    "main.js": "/loginAndRegisterPage/static/js/main.ff64e305.js",
     "static/js/787.241534ed.chunk.js": "/loginAndRegisterPage/static/js/787.241534ed.chunk.js",
+    "static/media/contact.png": "/loginAndRegisterPage/static/media/contact.a850f8838aac4d8651d0.png",
     "static/media/bg.png": "/loginAndRegisterPage/static/media/bg.ab116a3d75ebbe6af62e.png",
     "static/media/logo.png": "/loginAndRegisterPage/static/media/logo.9423d6c22c8589ee1985.png",
     "index.html": "/loginAndRegisterPage/index.html",
-    "main.9d2daae3.css.map": "/loginAndRegisterPage/static/css/main.9d2daae3.css.map",
-    "main.fd25ced0.js.map": "/loginAndRegisterPage/static/js/main.fd25ced0.js.map",
+    "main.8eeba69b.css.map": "/loginAndRegisterPage/static/css/main.8eeba69b.css.map",
+    "main.ff64e305.js.map": "/loginAndRegisterPage/static/js/main.ff64e305.js.map",
     "787.241534ed.chunk.js.map": "/loginAndRegisterPage/static/js/787.241534ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d2daae3.css",
-    "static/js/main.fd25ced0.js"
+    "static/css/main.8eeba69b.css",
+    "static/js/main.ff64e305.js"
   ]
 }
