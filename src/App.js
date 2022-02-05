@@ -1,5 +1,8 @@
-import * as React from 'react';
 // npm install react-router-dom
+// npm i bootstrap-icons
+// npm i google-map-react
+
+import * as React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';

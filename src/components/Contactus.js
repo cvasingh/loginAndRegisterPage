@@ -3,13 +3,8 @@ import contactimg from './img/contact.png'
 
 export default function Contactus() {
     return (
-        <div className='bg-ska-primary-light' style={{ minHeight: '100vh' }}>
-            <div className='row align-items-center justify-content-center mt-5 mx-0'
-                style={{
-                    height: '50vh',
-                    background: `linear-gradient( 10deg,rgba(30, 255, 10, 0.055),rgba(134, 243, 112, 0.514)), url(${contactimg}), no-repeat, 30%, 50%`,
-                    backgroundSize: 'cover'
-                }}>
+        <div className='bg-ska-primary-light'>
+            <div className='row align-items-center justify-content-center mt-5 mx-0 contact-bg'>
                 <div className='col-md-5 col-sm-6'>
                     <div className='display-3 fw-bolder text-center text-white'>
                         Contact Us</div>
@@ -31,17 +26,11 @@ export default function Contactus() {
             </div>
             {/* Course Enquiry section */}
             <div className='row justify-content-center mx-0'>
-                <div className='col-md-8 col-sm-10 px-5 py-3'
-                    style={{
-                        marginTop: '-10vh',
-                        borderRadius: '30px',
-                        background: 'linear-gradient(125deg, #a2e9c8,#c2f8df)',
-                        boxShadow: '0 3px 15px rgba(138, 158, 147, 0.205)'
-                    }}>
+                <div className='col-md-8 col-sm-10 px-5 py-3 ska-box course-enquiry'>
                     <div className='h1 fw-bolder text-ska-primary-dark'>
                         Course Enquiry
                     </div>
-                    <div className='h5 my-3 text-dark'>
+                    <div className='my-3 text-dark'>
                         Feel free to reach out to us if you have a query related to any
                         course or product that we offer. If you have already submitted the
                         details and have not yet heard from us please use the chat option in
@@ -81,20 +70,14 @@ export default function Contactus() {
             </div>
             {/* Corporate Enquiry */}
             <div className='row justify-content-center mx-0'>
-                <div className='col-md-8 col-sm-10 px-5 py-3'
-                    style={{
-                        marginTop: '50px',
-                        borderRadius: '30px',
-                        background: 'linear-gradient(125deg, #a2e9c8,#c2f8df)',
-                        boxShadow: '0 3px 15px rgba(138, 158, 147, 0.205)'
-                    }}>
+                <div className='col-md-8 col-sm-10 mt-5 px-5 py-3 ska-box' >
                     <div className='h1 fw-bolder text-ska-primary-dark'>
                         Corporate Enquiry
                     </div>
-                    <div className='h5 my-3 text-dark'>
-                    For any Corporate training/College training requirement please reach out to
-                     us on +919876543210 - Darius via call or Whatsapp or you can also send a mail to
-                      skillark@gmail.com We will definitely get back to you.
+                    <div className=' my-3 text-dark'>
+                        For any Corporate training/College training requirement please reach out to
+                        us on +919876543210 - Darius via call or Whatsapp or you can also send a mail to
+                        skillark@gmail.com We will definitely get back to you.
                     </div>
                     <form className=''>
                         <div className="row">
@@ -136,7 +119,7 @@ export default function Contactus() {
                     <div className='row p-3'>
                         <div className='col-2 h1 text-ska-secondary'><i class="bi bi-geo-alt-fill"></i></div>
                         <div className='col-10'>
-                            <div className='h4'>
+                            <div className='h6'>
                                 <a href='https://www.google.com/maps/search/BBDNIIT+course+admissions/@26.8883506,81.0555426,17z/data=!3m1!4b1'>
                                     BBD University, Y Block, Faizabad Rd, Lucknow, Uttar Pradesh 226028
                                 </a></div>
@@ -145,13 +128,13 @@ export default function Contactus() {
                     <div className='row px-3 '>
                         <div className='col-2 h1 text-ska-secondary'><i class="bi bi-telephone-fill"></i></div>
                         <div className='col-10'>
-                            <div className='h4'><a href='tel:+9876543210'>+9876543210</a></div>
+                            <div className='h6'><a href='tel:+9876543210'>+9876543210</a></div>
                         </div>
                     </div>
                     <div className='row p-3'>
                         <div className='col-2 h1 text-ska-secondary'><i class="bi bi-envelope-fill"></i></div>
                         <div className='col-10'>
-                            <div className='h4'><a href='mailto:skillark@gmail.com'>skillark@gmail.com</a></div>
+                            <div className='h6'><a href='mailto:skillark@gmail.com'>skillark@gmail.com</a></div>
                         </div>
                     </div>
                 </div>
