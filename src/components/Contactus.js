@@ -3,7 +3,7 @@ import contactimg from './img/contact.png'
 
 export default function Contactus() {
     return (
-        <div className='bg-ska-primary-light' style={{ height: '100%' }}>
+        <div className='bg-ska-primary-light' style={{ minHeight: '100vh' }}>
             <div className='row align-items-center justify-content-center mt-5 mx-0'
                 style={{
                     height: '50vh',

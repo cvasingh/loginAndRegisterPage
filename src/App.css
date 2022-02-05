@@ -1,4 +1,4 @@
-/* style */
+/* style login module */
 .glass{
     background : linear-gradient(315deg,rgba(224, 224, 224,.4),rgba(255, 255, 255,.6));
     box-shadow : 0 0 24px -1px rgb(53 101 224 / 25%);
@@ -10,10 +10,10 @@
     border-radius: 35px;
 }
 
+/* contact us page */
 .social_media a{
     transition: .3s;
 }
-
 .social_media a.fb{ color:#fff; background:#1964DA; border-radius: 7px;}
 .social_media a.twtr{color: #fff; background:#3ABDD1; border-radius:7px;}
 .social_media a.github{ color:#FFFFFF; background:#9CDAF1; border-radius: 7px;}
@@ -41,6 +41,7 @@
 .social_media a.skype:hover{color: #00AAF1; background:#fff; border-radius:7px;}
 .social_media a.yt:hover{ color:#f00; background:#fff; border-radius: 7px;}
 .social_media a.dribbble:hover{ color: #F97193; background:#fff; border-radius:7px;}
+
 /* over write on bootstrap */
 a {
     color: #198754;

@@ -7,12 +7,16 @@ import 'bootstrap/dist/js/bootstrap.js';
 import './App.css';
 import Loginmodule from './components/Loginmodule';
 import Contactus from './components/Contactus';
+import Careers from './components/Careers';
 
 export default function App() {
   return (
     <BrowserRouter>
       <div className='fixed-top'>
         <div className='row justify-content-end'>
+          <div className='col-1 m-2 text-start'>
+            <Link to='/careers'>Careers</Link>
+          </div>
           <div className='col-1 m-2 text-start'>
             <Link to='/contactus'>Contact Us</Link>
           </div>
@@ -26,6 +30,7 @@ export default function App() {
       </div>
 
       <Routes>
+        <Route path='/careers' element={<Careers />} />
         <Route path='/contactus' element={<Contactus />} />
         <Route path="/login" element={<Loginmodule id={"#login"} />} />
         <Route path="/register" element={<Loginmodule id={"#register"} />} />
