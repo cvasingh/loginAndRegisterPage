@@ -25,7 +25,7 @@ export default function Contactus() {
                 </div>
             </div>
             {/* Course Enquiry section */}
-            <div className='row justify-content-center mx-0'>
+            <div className='row justify-content-center mx-3'>
                 <div className='col-md-8 col-sm-10 px-5 py-3 ska-box course-enquiry'>
                     <div className='h1 fw-bolder text-ska-primary-dark'>
                         Course Enquiry
@@ -69,7 +69,7 @@ export default function Contactus() {
                 </div>
             </div>
             {/* Corporate Enquiry */}
-            <div className='row justify-content-center mx-0'>
+            <div className='row justify-content-center mx-3'>
                 <div className='col-md-8 col-sm-10 mt-5 px-5 py-3 ska-box' >
                     <div className='h1 fw-bolder text-ska-primary-dark'>
                         Corporate Enquiry
