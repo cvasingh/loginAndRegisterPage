@@ -1,71 +1,45 @@
 import React from 'react';
-import contactimg from './img/contact.png'
+import Contactform from './Contactform';
+import Footer from './Footer';
+import Navbar from './Navbar';
+import PrivateData from './data/PrivateData';
 
 export default function Contactus() {
-    return (
-        <div className='bg-ska-primary-light'>
-            <div className='row align-items-center justify-content-center mt-5 mx-0 contact-bg'>
+    return (<>
+        <Navbar />
+        <div>
+            <div className='row align-items-center justify-content-center mx-0 contact-bg bg-ska-primary-light'>
                 <div className='col-md-5 col-sm-6'>
                     <div className='display-3 fw-bolder text-center text-white'>
                         Contact Us</div>
                     <div className='row justify-content-center mt-3 my-5'>
                         <div className='col-2 h4 fw-bolder text-center social_media'>
-                            <a className='fb' href='#'><i class="bi bi-facebook p-2"></i></a>
+                            <a className='fb' href={PrivateData.fb}><i class="bi bi-facebook p-2"></i></a>
                         </div>
                         <div className='col-2 h4 fw-bolder text-center social_media'>
-                            <a className='insta' href='#'><i class="bi bi-instagram p-2"></i></a>
+                            <a className='insta' href={PrivateData.instagram}><i class="bi bi-instagram p-2"></i></a>
                         </div>
                         <div className='col-2 h4 fw-bolder text-center social_media'>
-                            <a className='twtr' href='#'><i class="bi bi-twitter p-2"></i></a>
+                            <a className='twtr' href={PrivateData.linkedin}><i class="bi bi-linkedin p-2"></i></a>
                         </div>
                         <div className='col-2 h4 fw-bolder text-center social_media'>
-                            <a className='yt' href='#'><i class="bi bi-youtube p-2"></i></a>
+                            <a className='yt' href={PrivateData.youtube}><i class="bi bi-youtube p-2"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* Course Enquiry section */}
+            {/* Training Enquiry section */}
             <div className='row justify-content-center mx-3'>
                 <div className='col-md-8 col-sm-10 px-5 py-3 ska-box course-enquiry'>
                     <div className='h1 fw-bolder text-ska-primary-dark'>
-                        Course Enquiry
+                    Services Enquiry
                     </div>
                     <div className='my-3 text-dark'>
                         Feel free to reach out to us if you have a query related to any
-                        course or product that we offer. If you have already submitted the
-                        details and have not yet heard from us please use the chat option in
-                        the home page our associates are available on chat 24/7 or call on the
-                        numbers provided on the website.
+                        Service that we offer.
                     </div>
-                    <form className=''>
-                        <div className="row">
-                            <div className="col-md m-2">
-                                <input type="text" placeholder="First name" aria-label="First name"
-                                    className="form-control border-ska-primary-dark border-2 border-0 border-bottom" />
-                            </div>
-                            <div className="col-md m-2">
-                                <input type="text" placeholder="Last name" aria-label="Last name"
-                                    className="form-control border-ska-primary-dark border-2 border-0 border-bottom" />
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md m-2">
-                                <input type="email" placeholder="Email" aria-label="Email"
-                                    className="form-control border-ska-primary-dark border-2 border-0 border-bottom" />
-                            </div>
-                            <div className="col-md m-2">
-                                <input type="tel" type="tel" pattern="[5-9]{1}[0-9]{9}" placeholder="Phone" aria-label="Phone"
-                                    className="form-control border-ska-primary-dark border-2 border-0 border-bottom" />
-                            </div>
-                        </div>
-                        <div className='row'>
-                            <div class="col-md m-2">
-                                <textarea class="form-control border-ska-primary-dark border-2 border-0 border-bottom"
-                                    placeholder="Message...." rows="2"></textarea>
-                            </div>
-                        </div>
-                        <button type="submit" class="m-4 px-5 btn btn-ska-primary-dark ">Send Message</button>
-                    </form>
+                    {/* Course Enquiry */}
+                    <Contactform for='courseEnquiry' />
                 </div>
             </div>
             {/* Corporate Enquiry */}
@@ -76,38 +50,11 @@ export default function Contactus() {
                     </div>
                     <div className=' my-3 text-dark'>
                         For any Corporate training/College training requirement please reach out to
-                        us on +919876543210 - Darius via call or Whatsapp or you can also send a mail to
-                        skillark@gmail.com We will definitely get back to you.
+                        us on <a href={`tel:${PrivateData.phone} `}>{` ${PrivateData.phone} `}</a>Darius via call or Whatsapp or you can also send a mail to
+                        <a href={`mailto:${PrivateData.email} `}>{` ${PrivateData.email} `}</a>We will definitely get back to you.
                     </div>
-                    <form className=''>
-                        <div className="row">
-                            <div className="col-md m-2">
-                                <input type="text" placeholder="First name" aria-label="First name"
-                                    className="form-control border-ska-primary-dark border-2 border-0 border-bottom" />
-                            </div>
-                            <div className="col-md m-2">
-                                <input type="text" placeholder="Last name" aria-label="Last name"
-                                    className="form-control border-ska-primary-dark border-2 border-0 border-bottom" />
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md m-2">
-                                <input type="email" placeholder="Email" aria-label="Email"
-                                    className="form-control border-ska-primary-dark border-2 border-0 border-bottom" />
-                            </div>
-                            <div className="col-md m-2">
-                                <input type="tel" type="tel" pattern="[5-9]{1}[0-9]{9}" placeholder="Phone" aria-label="Phone"
-                                    className="form-control border-ska-primary-dark border-2 border-0 border-bottom" />
-                            </div>
-                        </div>
-                        <div className='row'>
-                            <div class="col-md m-2">
-                                <textarea class="form-control border-ska-primary-dark border-2 border-0 border-bottom"
-                                    placeholder="Message...." rows="2"></textarea>
-                            </div>
-                        </div>
-                        <button type="submit" class="m-4 px-5 btn btn-ska-primary-dark ">Send Message</button>
-                    </form>
+                    {/* Corporate Enquiry */}
+                    <Contactform for='corporateEnquiry' />
                 </div>
             </div>
 
@@ -120,24 +67,26 @@ export default function Contactus() {
                         <div className='col-2 h1 text-ska-secondary'><i class="bi bi-geo-alt-fill"></i></div>
                         <div className='col-10'>
                             <div className='h6'>
-                                <a href='https://www.google.com/maps/search/BBDNIIT+course+admissions/@26.8883506,81.0555426,17z/data=!3m1!4b1'>
-                                    BBD University, Y Block, Faizabad Rd, Lucknow, Uttar Pradesh 226028
+                                <a href={PrivateData.addressLink}>
+                                {` ${PrivateData.address} `}
                                 </a></div>
                         </div>
                     </div>
                     <div className='row px-3 '>
                         <div className='col-2 h1 text-ska-secondary'><i class="bi bi-telephone-fill"></i></div>
                         <div className='col-10'>
-                            <div className='h6'><a href='tel:+9876543210'>+9876543210</a></div>
+                            <div className='h6'><a href={`tel:${PrivateData.phone} `}>{` ${PrivateData.phone} `}</a></div>
                         </div>
                     </div>
                     <div className='row p-3'>
                         <div className='col-2 h1 text-ska-secondary'><i class="bi bi-envelope-fill"></i></div>
                         <div className='col-10'>
-                            <div className='h6'><a href='mailto:skillark@gmail.com'>skillark@gmail.com</a></div>
+                            <div className='h6'><a href={`mailto:${PrivateData.email} `}>{` ${PrivateData.email} `}</a></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>);
+        </div>
+        <Footer/>
+    </>);
 }

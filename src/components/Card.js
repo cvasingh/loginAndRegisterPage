@@ -1,0 +1,22 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+export default function Card(props) {
+  return (
+    <div className="col-md-3 col-sm-6 my-3 px-4 home-feature">
+      <div className="card thumbnail_bax p-0 border-2">
+        <img className='card-img-top' src={props.img}></img>
+        <div className="card-body bg-ska-primary">
+          <h5 className='card-title text-white'
+          style={{height:'20vw' , overflow:'hidden'}}>{props.title}</h5>
+          <p className='card-text text-ska-secondary'
+          style={{height:'100px' , overflow:'hidden'}}
+          >{props.desc}</p>
+          <p className='fw-bolder'>Price: ₹.{props.price}</p>
+          <Link className="btn btn-ska-secondary" 
+          to={`/course/${props.id}`}>Enroll Now</Link>
+        </div>
+      </div>
+    </div>
+  );
+}

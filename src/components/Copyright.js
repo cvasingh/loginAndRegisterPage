@@ -1,12 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 export default function Copyright() {
     return (
-        <p className='text-center'>
+        <div className='text-center fw-bold'>
             Copyright ©
-            <a href='https://skillark.org/'> Skillark </a>
+            <Link to='/'> Skillark </Link>
             {new Date().getFullYear()}.
-        </p>
+        </div>
     );
 }
 

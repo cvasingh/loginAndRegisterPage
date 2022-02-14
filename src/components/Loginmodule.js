@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Switch, Routes, Route } from 'react-router-dom';
 // file
-import bgimage from './img/bg.png';
-import logoimage from './img/logo.png';
+import bgimage from './img/style/bg.png';
+import logoimage from './img/style/logo.png';
 // component
 import Copyright from './Copyright';
 import Login from './Login';
@@ -26,7 +26,7 @@ export default function Loginmodule(props) {
             <div className='row align-items-center'>
               <div className='col-5 ps-5'>
                 <img src={logoimage} className='img-fluid' alt='logo'
-                  style={{ height: '100px', marginBottom: '10%' }}></img>
+                  style={{ height: '100px', marginBottom: '10%' }}/>
               </div>
               <div className='col-6'>
                 <div className='h1 text-start fw-bold' style={{ color: '#333' }}>
